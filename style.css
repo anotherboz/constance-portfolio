@@ -214,8 +214,9 @@ section {
 	color: white;
 }
 
-.section2 img {
-	width: auto;
+.section2-img {
+	width: 80vw;
+	
 }
 
 .section3 {
@@ -224,17 +225,20 @@ section {
 }
 
 .section4 {
+	width: 80vw;
+	background-color: black;
+	color: beige;
+}
+
+.section4-img {
 	width: 100vw;
-	font-size: 6rem;
-	color: darkblue;
-	font-family: "UnifrakturMaguntia", cursive;	
 }
 
 .section5 {
 	display: block;
 	padding: 2rem;
 	background-color: #e3e8ec;
-	color: #dc3545;
+	color: #2b2b2b;
 }
 
 .section5 h1 {
