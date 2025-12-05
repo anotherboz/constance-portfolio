@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+
+:root {
+	--wide: 100vw;
+	--narrow: 90vw;
+
+	@media screen and (max-width: 1024px){
+		--wide: 180vw;
+		--narrow: 95vw;
+	}
+}
+
+#goFS {
+	display: none;
+	@media screen and (max-height: 600px) {
+			display: block;
+		}
+}
+
 body {
 	font-weight: 400;
 	font-style: normal;
@@ -52,7 +70,7 @@ img {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: var(--wide);
 	height: 100svh;
 	overflow: hidden;
 }
@@ -60,7 +78,7 @@ img {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: var(--wide);
 	height: 8px;
 	transform: scaleX(0%);
 	transform-origin: center left;
@@ -78,7 +96,7 @@ img {
 }
 .scroller {
 	position: relative;
-	width: 1900vw;
+	width: 2900vw;
 	height: 100svh;
 	display: flex;
 	will-change: transform;
@@ -112,11 +130,11 @@ section {
 .banner-img,
 .story,
 .outro {
-	width: 95vw;
+	width: var(--narrow);
 }
 .header,
 .concept-img {
-	width: 100vw;
+	width: var(--wide);
 }
 .intro {
 	padding: 2rem;
@@ -199,44 +217,43 @@ section {
 }
 .section1 {
 	background-color: #ffb970;
-	width: 90vw;
+	width: var(--narrow);
 }
 .section1-img {
-	width: 80vw;
+	width: var(--wide);
 }
 .section1-img img {
 	height: 100vh;
 }
 
 .section2 {
-	width: 80vw;
+	width: var(--narrow);
 	background-color: black;
 	color: white;
 }
 
 .section2-img {
-	width: 80vw;
-	
+	width: var(--wide);
 }
 
 .section3 {
+	width: var(--wide);
 	background-color: black;
     color: beige;
 }
 
 .section4 {
-	width: 80vw;
+	width: var(--narrow);
 	background-color: black;
 	color: beige;
 }
 
 .section4-img {
-	width: 100vw;
+	width: var(--wide);
 }
 
 .section5 {
-	display: block;
-	padding: 2rem;
+	width: var(--narrow);
 	background-color: #e3e8ec;
 	color: #2b2b2b;
 }
@@ -249,13 +266,18 @@ section {
 	object-fit: scale-down;
 }
 
-.hero-img.section5 {
-	width: 150vw;
+.section5-img {
+	width: var(--wide)
 }
 
 .section6 {
-	width: 80vw;
+	width: var(--narrow);
 	background: black;
 	color: lightgray;
+}
+
+.section6 img {
+	height: 40vh;
+	object-fit: cover;
 }
 
