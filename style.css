@@ -37,7 +37,7 @@ h1 {
 	padding-top: 0.25rem;
 }
 h2 {
-	font-family: "Poppins", sans-serif;
+	font-family: "Anton", sans-serif;
 	font-size: 8vw;
 	font-weight: 500;
 }
@@ -233,11 +233,11 @@ section {
 }
 
 .section2-img {
-	width: var(--wide);
+	//width: var(--wide);
 }
 
 .section3 {
-	width: var(--wide);
+	// width: var(--wide);
 	background-color: black;
     color: beige;
 }
@@ -249,13 +249,13 @@ section {
 }
 
 .section4-img {
-	width: var(--wide);
+	
 }
 
 .section5 {
 	width: var(--narrow);
-	background-color: #e3e8ec;
-	color: #2b2b2b;
+	background-color: black; /* #2b2b2b;*/
+	color: #e3e8ec;
 }
 
 .section5 h1 {
@@ -267,13 +267,17 @@ section {
 }
 
 .section5-img {
-	width: var(--wide)
+	
 }
 
 .section6 {
-	width: var(--narrow);
+	width: 600px;
 	background: black;
 	color: lightgray;
+}
+
+.section6 .column {
+	width: 250px;	
 }
 
 .section6 img {
